@@ -19,8 +19,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'scrooloose/nerdtree'
-Plugin 'jnurmine/Zenburn'
-Plugin 'altercation/vim-colors-solarized'
+Plugin 'dracula/vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -34,13 +33,8 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 nnoremap <buffer> <C-r> <Esc>:w<CR>:exec '!python3' shellescape(@%, 1)<cr>
 
-if has('gui_running')
-  set background=dark
-  colorscheme solarized
-else
-  colorscheme zenburn
-endif
-
+"Setting the color setup
+color dracula
 set nu
 
 "NerdTree Setup"
