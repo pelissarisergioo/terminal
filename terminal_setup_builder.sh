@@ -33,7 +33,7 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap {;<CR> {<CR>};<ESC>O
 nnoremap <buffer> <C-r> <Esc>:w<CR>:exec '!python3' shellescape(@%, 1)<cr>
 
-unction! XTermPasteBegin()
+function! XTermPasteBegin()
 	  set pastetoggle=<Esc>[201~
 	    set paste
 	      return ""
